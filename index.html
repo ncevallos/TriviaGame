@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mario Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Mario Trivia Game!</h1>
+      <div id="howToPlay">
+      <p>Instructions go here!!!!</p>
+      </div>
+      <div id="goalScore">
+      <h2>Goal Score: </h2>
+      <span id="goalScore2">
+        <!--goal score gets inserted here -->
+      </span>
+      </div>
+      <div id="gameText">
+        <!--Game information like wins and losses will be loaded here -->
+      <h2>Wins: </h2>
+      <span id="wins">
+        <!--goal score gets inserted here -->
+      </span>    
+      <h2>Lossess: </h2>
+      <span id="losses">
+        <!--goal score gets inserted here -->
+      </span>         
+      </div>
+      <div id="radioButtons">
+<h2>Bowser has always been a villainous character.</h2>
+<form name="frm1" action="" method="post">
+<label for="q1true">True</label>
+<input type="radio" name="question1" id="q1true" value="True" />
+
+<label for="q1false">False</label>
+<input type="radio" name="question1" id="q1false" value="False" / >
+
+<br><br>
+<h2>Princess Daisy first appeared in a Mario game in what year?</h2>
+<label for="q2a1">1989</label>
+<input type="radio" name="question2" id="q2a1" value="1989" />
+
+<label for="q2a2">1992</label>
+<input type="radio" name="question2" id="q2a2" value="1992" / >
+
+<label for="q2a3">1995</label>
+<input type="radio" name="question2" id="q2a3" value="1995" / >
+
+<label for="q2a4">1994</label>
+<input type="radio" name="question2" id="q2a4" value="1994" / >
+<br><br>
+<h2>What year was the Super Mario Bros movie released?</h2>
+<label for="q3a1">1993</label>
+<input type="radio" name="question3" id="q3a1" value="1993" />
+
+<label for="q3a2">1997</label>
+<input type="radio" name="question3" id="q3a2" value="1997" / >
+
+<label for="q3a3">1990</label>
+<input type="radio" name="question3" id="q3a3" value="1990" / >
+
+<label for="q3a4">1995</label>
+<input type="radio" name="question3" id="q3a4" value="1995" / >
+<br><br>
+<input type="button" value="Submit"  class="btn btn-primary btn-lg" onclick="check1();"/>
+</form>
+      </div>
+        <div class="totalScore">
+        Your total score is: 
+        </div>
+        <div id="playerScore" class="totalScore">
+        0
+        <!--Guesses will be displayed here -->
+        </div>
+    </div>
+
+
+
+  </body>
+</html>
