@@ -12,31 +12,20 @@
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 
   </head>
-  <body>
-    <div class="jumbotron">
+  <body background="assets/images/New-Super-Mario-Bros.jpg">
+    <div class="jumbotron" id="jumbo">
       <h1>Mario Trivia Game!</h1>
       <div id="howToPlay">
-      <p>Instructions go here!!!!</p>
-      </div>
-      <div id="goalScore">
-      <h2>Goal Score: </h2>
-      <span id="goalScore2">
-        <!--goal score gets inserted here -->
-      </span>
-      </div>
-      <div id="gameText">
-        <!--Game information like wins and losses will be loaded here -->
-      <h2>Wins: </h2>
-      <span id="wins">
-        <!--goal score gets inserted here -->
-      </span>    
-      <h2>Lossess: </h2>
-      <span id="losses">
-        <!--goal score gets inserted here -->
-      </span>         
-      </div>
+      <p>How much do you know about Mario??? Finish the trivia below before the timer runs out and test your Mario knowledge!</p>
+      <div id="timerContainer">
+      <h3>Time Remaining: </h3>
+    <div id="timer">
+    <h3>30</h3>
+    </div>
+    </div>
+    </div>
       <div id="radioButtons">
-<h2>Bowser has always been a villainous character.</h2>
+<h2>Bowser character has always been a villian.</h2>
 <form name="frm1" action="" method="post">
 <label for="q1true">True</label>
 <input type="radio" name="question1" id="q1true" value="True" />
@@ -71,17 +60,65 @@
 <label for="q3a4">1995</label>
 <input type="radio" name="question3" id="q3a4" value="1995" / >
 <br><br>
-<input type="button" value="Submit"  class="btn btn-primary btn-lg" onclick="check1();"/>
+<h2>Super Mario Bros is in the Guinness book of World Records as the most successful gamiong franchise of all time? </h2>
+<label for="q4a1">True</label>
+<input type="radio" name="question4" id="q4a1" value="True" />
+
+<label for="q4a2">False</label>
+<input type="radio" name="question4" id="q4a2" value="False" / >
+<br><br>
+<h2>In all of Mario's game appearances, he has always been the hero.</h2>
+<label for="q5a1">True</label>
+<input type="radio" name="question5" id="q5a1" value="True" />
+
+<label for="q5a2">False</label>
+<input type="radio" name="question5" id="q5a2" value="False" / >
+<br><br>
+<h2>Mario has appeared in over _____ video games?</h2>
+<label for="q6a1">200</label>
+<input type="radio" name="question6" id="q6a1" value="200" />
+
+<label for="q6a2">50</label>
+<input type="radio" name="question6" id="q6a2" value="50" / >
+
+<label for="q6a3">75</label>
+<input type="radio" name="question6" id="q6a3" value="75" / >
+
+<label for="q6a4">100</label>
+<input type="radio" name="question6" id="q6a4" value="100" / >
+<br><br>
+<h2>Mario was originally created by _______ ?</h2>
+<label for="q7a1">Shigeru Miyamoto</label>
+<input type="radio" name="question7" id="q7a1" value="Shigeru Miyamoto" />
+
+<label for="q7a2">Gunpei Yokoi</label>
+<input type="radio" name="question7" id="q7a2" value="Gunpei Yokoi" / >
+
+<label for="q7a3">Koji Kondo</label>
+<input type="radio" name="question7" id="q7a3" value="Koji Kondo" / >
+
+<label for="q7a4">1995</label>
+<input type="radio" name="question7" id="q7a4" value="1995" / >
+<br><br>
+<h2>Mario was originally conceptualized as a _______?</h2>
+<label for="q8a1">Carpenter</label>
+<input type="radio" name="question8" id="q8a1" value="Carpenter" />
+
+<label for="q8a2">Plumber</label>
+<input type="radio" name="question8" id="q8a2" value="Plumber" / >
+
+<label for="q8a3">Garbageman </label>
+<input type="radio" name="question8" id="q8a3" value="Garbageman" / >
+
+<label for="q8a4">Doctor</label>
+<input type="radio" name="question8" id="q8a4" value="Doctor" / >
+<br><br>
+<input type="button" value="Submit"  class="btn btn-primary btn-lg" onclick="checkQuiz();"/>
 </form>
       </div>
-        <div class="totalScore">
-        Your total score is: 
-        </div>
-        <div id="playerScore" class="totalScore">
-        0
-        <!--Guesses will be displayed here -->
-        </div>
-    </div>
+
+
+    </div> <!--Closes Jumbotron -->
 
 
 
